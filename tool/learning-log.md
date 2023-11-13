@@ -78,6 +78,7 @@ Project: **Parkour game**
 		Ada.onCollide("linnlett", (linnlett) => {
     	    destroy(linnlett)
         })
+
         ```
 #### next step
 * Learn to change the properties of a sprite
