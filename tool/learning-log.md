@@ -95,7 +95,7 @@ Project: **Parkour game**
 -->
 
 
-10/19/23
+## 10/19/23
 
 #### learned/tinkered
 
@@ -147,7 +147,7 @@ What I learned is that decimal point shrink my sprite while whole numbers enlarg
 What I learned is that + value rotate clockwise, and - value rotate counterclockwise. In addition when rotating the sprite is not at a fixed position.
 
 
-10/23/23
+## 10/23/23
 
 * Learned how to use `color(R,G,B)`
 
