@@ -219,6 +219,32 @@ What I learned is that to write a text you use `text()`, and to change the prope
 
 
 
+## 12/3/23
+
+* Learned how to use rect(w, h) // w is width, and h is height
+    * Set w to 500, and h to 500
+        * the rectangle/square took up around 1/3 of the screen
+    * Set w to 1000, and h to 1000 (trying to find the width, and height of the whole screen)
+        * the height filled up the whole screen, but the width had about 1/3 more to go
+    * The height of whole screen is about 750, while the width is about 1540.
+    * Tried setting W and H to -#, but rectangle didnt show up
+        * W and H can only be a +#
+
+* Learned how to use circle(r) // r = radius
+    * Set radius to different #
+    * Changed the color of the circle using what I learned before (color(20, 30, 40))
+        * Circle became black or navy blue
+    * Tried scaling up the circle using (scale(3, 1))
+        * It turned my circle into a oval
+        * You can use scale to change the shape
+
+* MADE SOMETHING WITH EVERYTHING I LEARNED BEFORE AND NOW
+    * CODE IS IN THE mygame, www, index.html. 
+
+
+
+
+
 
 
 
