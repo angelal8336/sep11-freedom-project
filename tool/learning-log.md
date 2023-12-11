@@ -239,9 +239,36 @@ What I learned is that to write a text you use `text()`, and to change the prope
         * You can use scale to change the shape
 
 * MADE SOMETHING WITH EVERYTHING I LEARNED BEFORE AND NOW
-    * CODE IS IN THE mygame, www, index.html. 
+    * CODE IS IN THE mygame, www, index.html.
 
 
+## 12/10/23
+
+* Learned how to use `outline(w, c)` // w = width, c = color
+    * applied outline color to a newly imported sprite
+        * ```
+            Code: add([
+			    sprite("Kaboom"),
+			    loadSprite("Kaboom", "sprites/KaboomSprite.PNG"),
+			    outline(200, 50,20,30),
+		    ])
+            ```
+                * My sprite loaded but no outline.
+        * Tried giving sprite a position, as well
+            * Didnt work
+        * Question: Why isnt my code working, and how do i use `outline()`,
+        * Instead of putting rbg numbers as color, tried putting words like CYAN
+            * Didnt work
+        * Next step: Ask Slack my question
+
+* Learned how to use `body()`
+    * Gave my kaboom sprite a `body()`, `pos()`, and `area()` (to use body you must have area and pos)
+        * The sprite didnt get affect by gravity (fall down)
+    * Question: Am I missing something? Why isnt my sprite falling down even though I have all the requirment?
+    * Next step: Ask Slack about why isnt my sprite falling down
+
+* Kept trying to get `body()` to work by using `getGravity()`/`setGravity()`.
+    * Didnt work
 
 
 
