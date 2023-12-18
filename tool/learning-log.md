@@ -271,12 +271,3 @@ What I learned is that to write a text you use `text()`, and to change the prope
     * Didnt work
 
 
-
-
-
-
-
-
-
-
-
