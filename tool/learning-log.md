@@ -272,22 +272,33 @@ What I learned is that to write a text you use `text()`, and to change the prope
 
 ## 1/7/24
 
-Tried Learning addlevel()
+* Tried Learning `addlevel()`
 	* Was trying to create a level but for some reason I cannot define the symbol as my sprite without an error. I tried using the example code and revising what symbols I'm missing but it always gives me a cannot define error.
 	* Tried fixing my "" but most of the thing it "gave me a Level symbol def must be a function returning a componment list." error.
 	* Question: Why is my code loading this error??
 	* Tried for 45 minutes and I still cannot figure it out so I'm going to ask Mr.Mueller or slack
 
-Learned anchor()
+* Learned `anchor()`
 	* anchor allows you to stay at one spot while rotating.
- 	* I made my sprite anchor(center) and gave it different rotate() numbers like 7100, 200, 100. The sprite did not move spots while rotating. 
-Tried learning DoubleJump() by adding it into my code but realized I need a onground code to make it work
+ 	* I made my sprite `anchor(center)` and gave it different `rotate()` numbers like 7100, 200, 100. The sprite did not move spots while rotating. 
+  
+* Tried learning `DoubleJump()` by adding it into my code but realized I need a onground code to make it work
 
-* Tried making my sprite fall due to gravity using body()
- 	* DID NOT WORK. For some reason even though I added area(), and pos() my sprite just wont fall
+* Tried making my sprite fall due to gravity using `body()`
+ 	* DID NOT WORK. For some reason even though I added `area()`, and `pos()` my sprite just wont fall
     	* AFTER 30 minutes I FINALLY GOT MY SPRITE TO SLOWLY FALL DOWN.
-     * I used setGravity() and getGravity() while using body() and my sprite was falling at the rate I set my gravity too
-     * I removed body(), area() and pos(), and gravity stopped working, which means you NEED ALL OF THESE COMPONMENTS.
+     * I used `setGravity()` and `getGravity()` while using `body()` and my sprite was falling at the rate I set my gravity too
+     * I removed `body()`, `area()` and `pos()`, and gravity stopped working, which means you NEED ALL OF THESE COMPONMENTS.
+     * I played with how fast my sprite fall by changing the gravity. 500 made my sprite fall very quick but 1000 made it even quicker
+ 
+* Tried learning `onClick()` but my RemoveAll was undefined.
+	* `onClick()` only works outside an `add([])`
+
+* Learned how to use `move(direction, speed)`
+	* Made my bean sprite move RIGHT by 400 speed
+	* Question: Can I make it move diagonal?
+ 		* Tinkering made me realize that if you want to move diagonal you can make it move and set a gravity so it goes right while going down
+   
 
  
   
