@@ -300,7 +300,25 @@ What I learned is that to write a text you use `text()`, and to change the prope
  		* Tinkering made me realize that if you want to move diagonal you can make it move and set a gravity so it goes right while going down
    
 
- 
+## 1/14/24
+
+* Created a random project that included circles, rectangles and sprites of different color and size falling due to gravity
+	* Used to practice what I learned so far
+ 	* Tried to figure out a way to animate the objects while it's moving using `anim:`
+  		* Did not work. Plan = ask on kaboom channel on Monday
+   	* Tried to create a floor so that my falling sprites don't go off my screen by using floor pictures and turning it into my Floor sprite.
+   		* Could not figure out how to make the sprite longer ONLY longer in length so that I only needed 1 sprite instead of like 10.
+   	 		* Thoughts : using addLevel() symbols may work but the problem is that I still don't know how to make addLevel() work
+   	 
+* Watched a video on how someone used kaboomjs to create a flippy bird game
+	* https://www.youtube.com/watch?v=hgReGsh5xVU
+ 	* While watching I mainly focused on the way he explained how his code and how each componment works.
+  		* For example, I got an idea on how to use .jump, and why you need to store add([]) in a const sometimes.
+    	* 
+
+  
+
+
   
 
 
