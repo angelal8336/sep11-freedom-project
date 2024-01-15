@@ -305,16 +305,27 @@ What I learned is that to write a text you use `text()`, and to change the prope
 * Created a random project that included circles, rectangles and sprites of different color and size falling due to gravity
 	* Used to practice what I learned so far
  	* Tried to figure out a way to animate the objects while it's moving using `anim:`
-  		* Did not work. Plan = ask on kaboom channel on Monday
+  		* Did not work. Plan = ask on kaboom channel on Monday 
    	* Tried to create a floor so that my falling sprites don't go off my screen by using floor pictures and turning it into my Floor sprite.
    		* Could not figure out how to make the sprite longer ONLY longer in length so that I only needed 1 sprite instead of like 10.
-   	 		* Thoughts : using addLevel() symbols may work but the problem is that I still don't know how to make addLevel() work
+   	 		* Thoughts : using `addLevel()` symbols may work but the problem is that I still don't know how to make `addLevel()` work
+   	* Set the gravity of each sprite to a different value so that it falls at a different speed making it looks pretty cool
+   
    	 
 * Watched a video on how someone used kaboomjs to create a flippy bird game
 	* https://www.youtube.com/watch?v=hgReGsh5xVU
  	* While watching I mainly focused on the way he explained how his code and how each componment works.
-  		* For example, I got an idea on how to use .jump, and why you need to store add([]) in a const sometimes.
-    	* 
+  		* For example, I got an idea on how to use .jump, and why you need to store `add([])` in a const sometimes
+    		* For example, learned you can do `width() - #` inside of a `pos()` rather than just `pos(#, #)`
+    	* Tried to make my own flippy bird game in more simple code, but I couldn't get my pipes to be in the correct place, and get the doublejump to work
+     		*  In the end I just watched the video to try and understand the componments better
+    	* Questions: How does `+ offset` works? How does adding `width() - # inside` `pos()` work?
+
+* Learned `camScale()`
+	* Zooms in or out
+ 	* Wrote `camScale(5)`, and my whole screen zoomed all the way out so much that my sprite were tiny
+  	* Wrote `camScale(0.5)`, and my screen zoomed in and the sprite were bigger
+
 
   
 
