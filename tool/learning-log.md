@@ -327,8 +327,16 @@ What I learned is that to write a text you use `text()`, and to change the prope
   	* Wrote `camScale(0.5)`, and my screen zoomed in and the sprite were bigger
 
 
-  
+## 1/29/24
 
+* Tried learning how to make my sprite move and jump whena a key is pressed.
+	* I tried using `onKeyPress`, but I don't know how to format it so that I don't get an error. I watched youtube videos: https://www.youtube.com/watch?v=n-q0pKGhxyw&t=248s, and even went to kaboom's github to see their lib. However, no matter what the syntax of the code was hard for me to understand
+ 		* After trying for a good 30-60 min, I got this code that didn't give me an error, but neither did it work:
+   			* `onKeyPress("space", {
+				"space": bean.jump(),
+				})`
+			* when I pressed space, my sprite bean did not jump
+  	   	*  I asked on github for help
 
   
 
