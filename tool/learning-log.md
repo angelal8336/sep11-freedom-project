@@ -346,7 +346,7 @@ What I learned is that to write a text you use `text()`, and to change the prope
 * I tried storing my `add([])` into an const variable but for some reason whenever I did that it always gave me an error
 	* Question: What is the point of having an `const`?
   
-
+Next step: Make a super simple game only using level, and moving codes, and also try and learn how to use collide
 
 
 
