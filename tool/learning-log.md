@@ -348,8 +348,35 @@ What I learned is that to write a text you use `text()`, and to change the prope
   
 Next step: Make a super simple game only using level, and moving codes, and also try and learn how to use collide
 
+## 2/4/24
 
+* I got my floor to become solid
+	* After trying for a long time, all I need was a `body({ isStatic: true })` that basically declared the sprite to be non passable by any non static objects
+ 	* I didn't even need the `solid()` to get it to be solid
+ 
+* During class time, when I pressed space, instead of jumping it stopped responsing to gravity. However I realized now that it's because I need to put my `add([])` into an const variable
 
+* Tired learning to make my sprite move whenever right is pressed
+	* Used `move("right", "speed: -5")`, and it worked but it moved out of the screen
+ 		* Questions: How do I make it so that it only moves a little bit
+ 	* Tried changing right to x and y and assigning it a number but it still kept going off screen
+  	* Tried changing to `move("right", 2)`, but still went off the screen
+  	* Ask on github later tomorrow
+
+  * I got my sprite to moveTo a `rand()` place each time I press right
+  	* However, it always moved in a pattern, meaning it moved but techically wasnt random
+   		* when I pressed right, my sprite kept moving like an animation
+
+  * Tried using `onKeyPress()` instead of `onKeyDown()`
+	* This made it so that even if I hold down the key it will only do the action once unless I keep on clicking it
+
+* Tried learning how to use `wait()`
+	* I wrote `wait(3, () => {sprite("sprite")})` , but it gave me a dupilcate paused error
+		* I researched what paused does, but cannot figure out how to use it
+			* I tried to put it within the `wait()`, as an action
+			* I tried putting `paused: false` outside and inside of the `wait()` function
+   	* Question: Why doesnt my wait work, and how do I make it wait three second before spawning my sprite?
+   	* 
 
 
 
