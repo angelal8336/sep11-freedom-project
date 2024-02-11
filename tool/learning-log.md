@@ -270,6 +270,115 @@ What I learned is that to write a text you use `text()`, and to change the prope
 * Kept trying to get `body()` to work by using `getGravity()`/`setGravity()`.
     * Didnt work
 
+## 1/7/24
+
+* Tried Learning `addlevel()`
+	* Was trying to create a level but for some reason I cannot define the symbol as my sprite without an error. I tried using the example code and revising what symbols I'm missing but it always gives me a cannot define error.
+	* Tried fixing my "" but most of the thing it "gave me a Level symbol def must be a function returning a componment list." error.
+	* Question: Why is my code loading this error??
+	* Tried for 45 minutes and I still cannot figure it out so I'm going to ask Mr.Mueller or slack
+
+* Learned `anchor()`
+	* anchor allows you to stay at one spot while rotating.
+ 	* I made my sprite `anchor(center)` and gave it different `rotate()` numbers like 7100, 200, 100. The sprite did not move spots while rotating.
+
+* Tried learning `DoubleJump()` by adding it into my code but realized I need a onground code to make it work
+
+* Tried making my sprite fall due to gravity using `body()`
+ 	* DID NOT WORK. For some reason even though I added `area()`, and `pos()` my sprite just wont fall
+    	* AFTER 30 minutes I FINALLY GOT MY SPRITE TO SLOWLY FALL DOWN.
+     * I used `setGravity()` and `getGravity()` while using `body()` and my sprite was falling at the rate I set my gravity too
+     * I removed `body()`, `area()` and `pos()`, and gravity stopped working, which means you NEED ALL OF THESE COMPONMENTS.
+     * I played with how fast my sprite fall by changing the gravity. 500 made my sprite fall very quick but 1000 made it even quicker
+
+* Tried learning `onClick()` but my RemoveAll was undefined.
+	* `onClick()` only works outside an `add([])`
+
+* Learned how to use `move(direction, speed)`
+	* Made my bean sprite move RIGHT by 400 speed
+	* Question: Can I make it move diagonal?
+ 		* Tinkering made me realize that if you want to move diagonal you can make it move and set a gravity so it goes right while going down
+
+
+## 1/14/24
+
+* Created a random project that included circles, rectangles and sprites of different color and size falling due to gravity
+	* Used to practice what I learned so far
+ 	* Tried to figure out a way to animate the objects while it's moving using `anim:`
+  		* Did not work. Plan = ask on kaboom channel on Monday
+   	* Tried to create a floor so that my falling sprites don't go off my screen by using floor pictures and turning it into my Floor sprite.
+   		* Could not figure out how to make the sprite longer ONLY longer in length so that I only needed 1 sprite instead of like 10.
+   	 		* Thoughts : using `addLevel()` symbols may work but the problem is that I still don't know how to make `addLevel()` work
+   	* Set the gravity of each sprite to a different value so that it falls at a different speed making it looks pretty cool
+
+
+* Watched a video on how someone used kaboomjs to create a flippy bird game
+	* https://www.youtube.com/watch?v=hgReGsh5xVU
+ 	* While watching I mainly focused on the way he explained how his code and how each componment works.
+  		* For example, I got an idea on how to use .jump, and why you need to store `add([])` in a const sometimes
+    		* For example, learned you can do `width() - #` inside of a `pos()` rather than just `pos(#, #)`
+    	* Tried to make my own flippy bird game in more simple code, but I couldn't get my pipes to be in the correct place, and get the doublejump to work
+     		*  In the end I just watched the video to try and understand the componments better
+    	* Questions: How does `+ offset` works? How does adding `width() - # inside` `pos()` work?
+
+* Learned `camScale()`
+	* Zooms in or out
+ 	* Wrote `camScale(5)`, and my whole screen zoomed all the way out so much that my sprite were tiny
+  	* Wrote `camScale(0.5)`, and my screen zoomed in and the sprite were bigger
+
+
+## 1/29/24
+
+* Tried learning how to make my sprite move and jump whena a key is pressed.
+	* I tried using `onKeyPress`, but I don't know how to format it so that I don't get an error. I watched youtube videos: https://www.youtube.com/watch?v=n-q0pKGhxyw&t=248s, and even went to kaboom's github to see their lib. However, no matter what the syntax of the code was hard for me to understand
+ 		* After trying for a good 30-60 min, I got this code that didn't give me an error, but neither did it work:
+   			* ```onKeyPress("space", {
+				"space": bean.jump(),
+				})```
+			* when I pressed space, my sprite bean did not jump
+  	   		* I figured it out FINALLY. The reason the example did not work was because I needed `setGravity` so my sprite is able to jump
+        	* I also learned how to use `.moveTo` to move to a certain position when a key is pressed
+        		* Question: How do you move the sprite by a few pixel each time u press it using `move()`
+		* I FINALLY GOT ADD LEVEL TO WORK. However the `solid()` property did not work, since it's undefined, and I have no idea how to define that property.
+  			* I tinkered with the `tilewidth`, and `tileheight` to make it the same as my computer screen
+  			* I defined each symbol and included the exact syntax like the example
+
+* I tried storing my `add([])` into an const variable but for some reason whenever I did that it always gave me an error
+	* Question: What is the point of having an `const`?
+
+Next step: Make a super simple game only using level, and moving codes, and also try and learn how to use collide
+
+## 2/4/24
+
+* I got my floor to become solid
+	* After trying for a long time, all I need was a `body({ isStatic: true })` that basically declared the sprite to be non passable by any non static objects
+ 	* I didn't even need the `solid()` to get it to be solid
+
+* During class time, when I pressed space, instead of jumping it stopped responsing to gravity. However I realized now that it's because I need to put my `add([])` into an const variable
+
+* Tired learning to make my sprite move whenever right is pressed
+	* Used `move("right", "speed: -5")`, and it worked but it moved out of the screen
+ 		* Questions: How do I make it so that it only moves a little bit
+ 	* Tried changing right to x and y and assigning it a number but it still kept going off screen
+  	* Tried changing to `move("right", 2)`, but still went off the screen
+  	* Ask on github later tomorrow
+
+  * I got my sprite to moveTo a `rand()` place each time I press right
+  	* However, it always moved in a pattern, meaning it moved but techically wasnt random
+   		* when I pressed right, my sprite kept moving like an animation
+
+  * Tried using `onKeyPress()` instead of `onKeyDown()`
+	* This made it so that even if I hold down the key it will only do the action once unless I keep on clicking it
+
+* Tried learning how to use `wait()`
+	* I wrote `wait(3, () => {sprite("sprite")})` , but it gave me a dupilcate paused error
+		* I researched what paused does, but cannot figure out how to use it
+			* I tried to put it within the `wait()`, as an action
+			* I tried putting `paused: false` outside and inside of the `wait()` function
+   	* Question: Why doesnt my wait work, and how do I make it wait three second before spawning my sprite?
+   	*
+
+
 
 12/18/21
 
