@@ -380,7 +380,27 @@ Next step: Make a super simple game only using level, and moving codes, and also
 
 
 
-12/18/21
+3/3/24:
+    * Got my background to be the full width and height of my screen
+        * used `fixed()`, `width()`, and `height()` on my sprite
+            * also used it to change the size of the game
+        * In the progess changing pic to my own pixel background made using the app piskel
 
+    * got my sprite, and gravity down
+        * Used `setGravity()`, `pos()`, `body()`, `area()`
 
+    * created a addLevel that has my floor, and other symbols that is yet to be defined (making platform pixel img)
+        * The floor is solid which means my sprite cannot passed through.
 
+    * Got my sprite to move left and right by a certain pixel when the key right, or left is press and got my sprite to jump, but only a certain amount of times
+        * Used `move()`, and `doublejump()`
+        * Sprite is able to move left, right, and jump
+
+    * Got my sprite to destory when collided with another sprite
+        * Used `Oncollide()`, and gave monster a tag of monster using `.use()`
+        * When sprite collides with a tag of monster, the sprite gets destoryed
+        * Tried making my sprite lose 1 hp each time, but it did not work
+
+    * Got my monster sprite to spawn at a random place when the website is reloaded
+        * Used `rand()`, and `move()`
+        * Tried to get monster to move every few seconds but did not work
