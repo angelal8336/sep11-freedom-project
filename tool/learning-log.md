@@ -404,3 +404,37 @@ Next step: Make a super simple game only using level, and moving codes, and also
     * Got my monster sprite to spawn at a random place when the website is reloaded
         * Used `rand()`, and `move()`
         * Tried to get monster to move every few seconds but did not work
+
+3/10/24
+
+* Learning how to use piskel to create my own pixel sprites
+    * Watched a muliples tutorial video's to understand the tools
+        * https://www.youtube.com/watch?v=gBn2WeY5yf8&t=462s - taught me the tools on the left side
+        * https://www.youtube.com/watch?v=7AKGb2sg19E - taught me how to animate a sprite (For beyond MVP)
+            * You can animate the sprite by adding more frames, and selecting the speed
+                * Copy, and paste the frames so that you don't have to redraw everything
+
+* Created a platform sprite on my own using piskel
+    * Took more than 30 min, but the platform sprite is completed
+    * Created an animation for it
+        * The platform has three frames, each frames moving it up higher with fire shooting out
+            * Beyond MVP - Learn how to import animation to the game
+
+* Got my monster sprite to move in one direction always using `move()` (ada helped me with it)
+    * next step get it to move back and forth
+        * If not possible, add two monster sprite each moving in one direction
+
+* *** BIG BUG ****
+    *  For some reason my sprite cannot move right anymore whenever the button is clicked
+        * I tried rewriting the code, and comment out whatever I did before it stopped working but nothing worked
+        * I tried reloading my page, and resetting my computer
+        * I FIGURED IT OUT. The platform png that I imported is way to big, meaning the reason I couldn't move right is because the transparent part of the picture is blocking my way
+            * I cropped the img to make it smaller
+
+* Coded a code that will make it so that whenever my sprites, moves the camera follows
+    * Learned how to use `.onUpdate`
+        * every frame it runs
+    * Learned how to use `camerapos`
+        * set your camera to a certain position
+    * Learned how to use `shake`
+        * shakes your camera
