@@ -380,7 +380,7 @@ Next step: Make a super simple game only using level, and moving codes, and also
 
 
 
-3/3/24:
+## 3/3/24:
     * Got my background to be the full width and height of my screen
         * used `fixed()`, `width()`, and `height()` on my sprite
             * also used it to change the size of the game
@@ -405,7 +405,7 @@ Next step: Make a super simple game only using level, and moving codes, and also
         * Used `rand()`, and `move()`
         * Tried to get monster to move every few seconds but did not work
 
-3/10/24
+## 3/10/24
 
 * Learning how to use piskel to create my own pixel sprites
     * Watched a muliples tutorial video's to understand the tools
