@@ -438,3 +438,33 @@ Next step: Make a super simple game only using level, and moving codes, and also
         * set your camera to a certain position
     * Learned how to use `shake`
         * shakes your camera
+
+## 3/24/24
+
+* Learned how to use follow()
+    * By adding follow() to a const, your sprite will be attached to another sprite since it's always following it
+    * Going to try and use follow to see if the monster sprite can chase the bean sprite
+
+* Made my monster sprite move towards one direction infinitely
+    * The monster sprite will be able to push my bean sprite off
+    * Trying to code something that will make you lose an hp if you touch it using collide
+
+* Created a scene of you lose (another "map")
+    * When the player collides with the monster, it brings you to this scene
+        * However, the go() did not work, and I couln't figure out what is wrong
+
+* Gave my sprite an hp of 5, and tried to make it lose 1 hp everytime it collides using player.hurt(1)
+    * Player.hurt(1) did not work
+
+* Learned ways to use isKeyPressed()
+    * you can speed up your sprite when certain key is pressed
+    * you can fire/spawn a sprite
+
+* Wait(), and setFullScreen() can be used to activate an event a few second later, and set the screen to full respectivity
+    * Tried using wait() on a moveTo(), to wait 5 second before moving my sprite to the player positon
+        * Did not work, and all my code is bugged. (missing declaration or statement)
+
+* Lifespan() basically gives a "timer" to something, and when that timer runs out something happens
+
+* FadeIn() makes something appear slowly
+    * a sprite can appear after # of seconds
