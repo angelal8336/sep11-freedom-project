@@ -468,3 +468,22 @@ Next step: Make a super simple game only using level, and moving codes, and also
 
 * FadeIn() makes something appear slowly
     * a sprite can appear after # of seconds
+
+## 4/1/24
+
+* learned how to use scene(), and go() to create mulitple scenes/maps
+    * Used Scene() and go() to create a scene with a text
+    * You can use a const to store all the scenes in one object and then use it inside the scene
+        * Makes it easier to read
+    * Tried creating an end scene, and making it go to that scene when bean collides with monster tag
+        * didnt work
+
+* Learned how to use letterbox to make my game take up the middle space, and keep it's ratio when zoom in or out
+    * I added letterbox: true to my kaboom()
+
+* Tried to code an hp
+    * Tried storing an hp value inside an variable, and then decreasing it every time it collides with monster. Once the number reaches 0, using an if statement, it would bring you to another scene
+        * didn't work
+
+* watched video tutoral video on certain parts to get an understanding
+    * https://www.youtube.com/watch?v=wZpbTR7pYR0 - 7 hr long video
