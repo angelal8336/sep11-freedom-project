@@ -487,3 +487,37 @@ Next step: Make a super simple game only using level, and moving codes, and also
 
 * watched video tutoral video on certain parts to get an understanding
     * https://www.youtube.com/watch?v=wZpbTR7pYR0 - 7 hr long video
+
+
+## 4/14/24
+
+* Watched parts of full length game tutorials
+	* https://www.youtube.com/watch?v=wZpbTR7pYR0&t=3374s
+ 	* https://www.youtube.com/watch?v=pVAmEJqK-3A
+ 
+* Learned how to use isMousePressed, isMouseMoved, and isMouseReleased
+	* Tried making my sprite move or teleport to a certain spot whenever the mouse is pressed and released
+ 		* By using moveTo() I was able to get my sprite to teleport
+   	* Tried making my sprite follow the mouse
+   		* Tried using move/follow() but it did not work
+   	
+* Continued learning how to use scene
+	* I created a you lost scene where the user will go to if it collides with a certain sprite.
+		* Tried using scene when hp = 0 but the hp bar still did not work
+	* tinkered/compared addLevel with scene
+ 		* I was able to make an map with scene, and also store that into a whole var making it easier to use
+   			* However I realized addLevel with much easier since it requires less code
+  	* Created many scene with text that will run when a condition is met
+  		* A you lost, you win, tie scene
+
+* Tried plugging music into the game using loadMusic, and loadSound
+	* THIS WAS SO HARD. I couldnt get the file into the game, and the music wouldnt load
+ 		* I tried using premade music easy beats to see if it would work, but it did not
+ 
+* Learned how to use draw commands like drawEllipse, drawRect, etc
+	* I was able to draw many shapes using this command, and by using if statement/conditional, make it appear at certain times
+ 		* I was able to draw an rectangle by defining it's weight, height, position, color, and outline
+ 		* The shapes was not very useful in my game, but it was fun to create shapes using kaboom, instead of p5js
+   
+
+   	  
