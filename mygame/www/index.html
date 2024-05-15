@@ -16,7 +16,9 @@
             letterbox: true,
         })
 
-        loadSound("music", "sprites/JoyMusic.mp3")
+        loadSound("music1", "Sounds/JoyMusic.mp3")
+        loadSound("music2", "Sounds/coin.mp3")
+        loadSound("music3", "Sounds/fail.mp3")
         setGravity(1600)
 
         // sprites
@@ -144,6 +146,9 @@
 
         player.onCollide("monster", (monster) => {
             go('lose')
+            play("music3", {
+                volume: 0.8,
+            });
         })
 
 
@@ -168,7 +173,7 @@
                 scale(2),
             ])
             coin.destroy()
-            play("music", {
+            play("music2", {
                 volume: 0.8,
             });
         })
