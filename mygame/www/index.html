@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mygame</title>
+</head>
+<body>
+	<script src="main.js"></script>
+	<script type="module">
+
+		// import kaboom lib
+		import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+		kaboom({
+            width: 1280,
+            height: 800,
+            letterbox: true,
+        })
+
+        loadSound("music", "sprites/JoyMusic.mp3")
+        setGravity(1600)
+
+        // sprites
+
+        loadSprite("background", "sprites/Background.jpg"),
+        loadSprite("player", "sprites/bean.png")
+        loadSprite("platform", "sprites/platform.jpeg")
+        loadSprite("monster", "sprites/egg.png")
+        loadSprite("platform2", "sprites/Platform.png")
+        loadSprite("coin", "sprites/Coin.png")
+
+       add([
+            sprite("background", {width: width(), height: height()}),
+            fixed(),
+        ])
+
+        var numMonsters = 0;
+        var score = 0;
+        var x = 0;
+
+        wait(1, () => {
+            addCoin();
+        })
+
+        function addCoin(){
+            add([
+                sprite("coin"),
+                pos(rand(vec2(width(), 0))),
+                body(),
+                area(),
+                'coin',
+            ])
+
+            wait(3, () => {
+                addCoin();
+	        })
+
+        }
+
+        const player = add([
+            sprite("player"),
+            pos(),
+            body(),
+            doubleJump(2),
+            area(),
+            health(5, 10),
+        ])
+
+
+        const monster = add([
+            sprite("monster"),
+            pos(200, 200),
+            body(),
+            area(),
+        ])
+
+        monster.use("monster"),
+
+        wait(3, () => {
+            addMonster();
+        })
+
+        function addMonster(){
+            add([
+                sprite("monster"),
+                pos(rand(vec2(width(), 0))),
+                body(),
+                area(),
+                'monster',
+            ])
+            wait(2, () => {
+                numMonsters++
+                if(numMonsters < 10){
+                    addMonster();
+                }
+	        })
+
+        }
+
+        onKeyPress("space", () => {
+            player.doubleJump()
+        })
+
+        onKeyDown("right", () => {
+            player.move(1000, 200)
+        })
+
+        onKeyDown("left", () => {
+            player.move(-1000, 200)
+        })
+
+         const mymap = addLevel([
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "                                                         ",
+            "=                                         =             =",
+        ], {
+            tileWidth: 16,
+            tileHeight: 30,
+            tiles: {
+                "=": () =>  [
+                    sprite("platform"),
+                    pos(0, 400),
+                    body({ isStatic: true }),
+                    area(),
+                    'platform',
+                ],
+                "1": () => [
+                    sprite("platform2"),
+                    body({ isStatic: true }),
+                    area(),
+                    pos(),
+                ]
+            }
+        })
+
+        player.onCollide("monster", (monster) => {
+            go('lose')
+        })
+
+
+        scene("lose", () => {
+            add([
+                text("you lose"),
+                pos(550, 400),
+                scale(3),
+            ])
+        })
+
+        // monster.onCollide("platform", (platform) => {
+        //     destory()
+        // })
+
+        player.onCollide("coin", (coin) => {
+            score++
+            x += 50
+            add([
+                text(score),
+                pos(200+x, 200),
+                scale(2),
+            ])
+            coin.destroy()
+            play("music", {
+                volume: 0.8,
+            });
+        })
+
+
+
+	</script>
+</body>
+</html>
