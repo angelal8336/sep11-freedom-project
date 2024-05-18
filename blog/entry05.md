@@ -3,7 +3,7 @@
 
 ### Process
 
-The tool I used for my project was [KaboomJS](https://kaboomjs). For the last few days, I have been trying to finish my MVP. For example, to finish my MVP, the main code I coded was the function `addMonster()`. `addMonster()` was a function that will drop a monster at a random position from the top of my screen. This sounds easy, but it was very difficult as I had to one, consider how to loop it forever/until condition is met, and two make the monster actually drop from a random position at a set interval. To begin, I first created the function, and added sprite monster, `pos()`, `area()`, and `body()` to it. From there I tried to give the monster a set position of (200, 200) like shown below:
+The tool I used for my project was [KaboomJS](https://kaboomjs.com/). For the last few days, I have been trying to finish my MVP. For example, to finish my MVP, the main code I coded was the function `addMonster()`. `addMonster()` was a function that will drop a monster at a random position from the top of my screen. This sounds easy, but it was very difficult as I had to one, consider how to loop it forever/until condition is met, and two make the monster actually drop from a random position at a set interval. To begin, I first created the function, and added sprite monster, `pos()`, `area()`, and `body()` to it. From there I tried to give the monster a set position of (200, 200) like shown below:
 
 ```js
 function addMonster(){
@@ -105,7 +105,7 @@ player.onCollide('monster', (monster) => {
 })
 ```
 
-This made it so that whenever player collides with monster, it goes to the scene describe by the code snip + 1 above. After this code was created, my MVP was basically done, since the game was able to end, and the user was able to play it. The only thing left for me to do was to change the pictures/sprites to the to the ones I wanted. In other words, I needed to replace my substitute sprite/images to the actual one I needed. After this was done, I was finally finished the MVP of my code. Here is the [link](mygame/www/index.html/) to the final code.
+This made it so that whenever player collides with monster, it goes to the scene describe by the code snip + 1 above. After this code was created, my MVP was basically done, since the game was able to end, and the user was able to play it. The only thing left for me to do was to change the pictures/sprites to the to the ones I wanted. In other words, I needed to replace my substitute sprite/images to the actual one I needed. After this was done, I was finally finished the MVP of my code. Here is the [link](../mygame/www/index.html/) to the final code.
 
 In summary, I was able to not only code a function that allowed for a sprite to fall down at random area, I was also able to make the game end whenever the user failed to dodge the falling monster sprite.
 
