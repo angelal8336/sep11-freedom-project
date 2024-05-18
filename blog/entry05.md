@@ -105,7 +105,9 @@ player.onCollide('monster', (monster) => {
 })
 ```
 
-This made it so that whenever player collides with monster, it goes to the scene describe by the code snip + 1 above. After this code was created, my MVP was basically done, since the game was able to end, and the user was able to play it. The only thing left for me to do was to change the pictures/sprites to the to the ones I wanted. In other words, I needed to replace my substitute sprite/images to the actual one I needed. After this was done, I was finally finished the MVP of my code. Here is the [link](../mygame/www/index.html/) to the final code.
+This made it so that whenever player collides with monster, it goes to the scene describe by the code snip + 1 above. After this code was created, my MVP was basically done, since the game was able to end, and the user was able to play it. The only thing left for me to do was to change the pictures/sprites to the to the ones I wanted. In other words, I needed to replace my substitute sprite/images to the actual one I needed. After this was done, I was finally finished the MVP of my code. Here is the [link](../mygame/www/index.html/) to the final code, and below is the my game:
+
+(![alt text](Game.PNG))
 
 In summary, I was able to not only code a function that allowed for a sprite to fall down at random area, I was also able to make the game end whenever the user failed to dodge the falling monster sprite.
 
