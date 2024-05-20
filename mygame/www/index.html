@@ -39,24 +39,24 @@
         var score = 0;
         var x = 0;
 
-        wait(1, () => {
-            addCoin();
-        })
+        // wait(1, () => {
+        //     addCoin();
+        // })
 
-        function addCoin(){
-            add([
-                sprite("coin"),
-                pos(rand(vec2(width(), 0))),
-                body(),
-                area(),
-                'coin',
-            ])
+        // function addCoin(){
+        //     add([
+        //         sprite("coin"),
+        //         pos(rand(vec2(width(), 0))),
+        //         body(),
+        //         area(),
+        //         'coin',
+        //     ])
 
-            wait(3, () => {
-                addCoin();
-	        })
+        //     wait(3, () => {
+        //         addCoin();
+	    //     })
 
-        }
+        // }
 
         const player = add([
             sprite("player"),
@@ -89,9 +89,9 @@
                 area(),
                 'monster',
             ])
-            wait(2, () => {
+            wait(1, () => {
                 numMonsters++
-                if(numMonsters < 10){
+                if(numMonsters < 200){
                     addMonster();
                 }
 	        })
@@ -173,12 +173,13 @@
                 scale(2),
             ])
             coin.destroy()
+            play("music1", {
+                volume: 0.5,
+            })
             play("music2", {
                 volume: 0.8,
             });
         })
-
-
 
 	</script>
 </body>
