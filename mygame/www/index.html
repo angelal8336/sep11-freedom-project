@@ -146,6 +146,9 @@
 
         player.onCollide("monster", (monster) => {
             go('lose')
+            play("music1", {
+                volume: 0.3,
+            })
             play("music3", {
                 volume: 0.8,
             });
