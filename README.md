@@ -4,7 +4,7 @@ by **X**
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
-For my project, I chose to independently study **X** in order to help me make **X**.
+For my project, I chose to independently study kaboom in order to help me make a pixel game where the user has to dodge monsters while collecting coins. The monster and coin falls from the sky at random position with delays. The user can jump using space bar and move using the left and right arrow. If the player touches the monsters, it's game over. For this game, I partnered up with ada, so that we could create a game with background music and sounds. The coin collecting sound, game over sound, and background music is made using earsketch. 
 
 ## Links
 
