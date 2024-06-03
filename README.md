@@ -1,10 +1,10 @@
 # SEP11 Freedom Project
-by **X**
+by Angela Liu
 
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP11 is a year-long project all about making something using JavaScript along with a third-party JS tool.
 
-For my project, I chose to independently study kaboom in order to help me make a pixel game where the user has to dodge monsters while collecting coins. The monster and coin falls from the sky at random position with delays. The user can jump using space bar and move using the left and right arrow. If the player touches the monsters, it's game over. For this game, I partnered up with ada, so that we could create a game with background music and sounds. The coin collecting sound, game over sound, and background music is made using earsketch. 
+For my project, I chose to independently study kaboom in order to help me make a pixel game where the user has to dodge monsters while collecting coins. The monster and coin falls from the sky at random position with delays. The user can jump using space bar and move using the left and right arrow. If the player touches the monsters, it's game over. For this game, I partnered up with ada, so that we could create a game with background music and sounds. The coin collecting sound, game over sound, and background music is made using [Earsketch](https://earsketch.gatech.edu/landing/#/). 
 
 ## Links
 
@@ -19,12 +19,14 @@ For my project, I chose to independently study kaboom in order to help me make a
     * Less boredom, and more fun since you are able to complete with your friends to see who can get the highest score
     * Can improve user's reflex skils which can be transfered to day to day life
     * easy to understand/simple
+   
 * Global
     * No paper is wasted since the game is digital; no pollution
   
 ##### CONS
 * Social
     * May get addicted to the game; no work done, and no new friends
+   
 * Game
     * You have to jump before moving or else your likely to touch the monster
     * You can fall off the map if you go to the sides since there is no constrain to keep you within the screen
