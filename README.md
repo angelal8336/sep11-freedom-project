@@ -8,16 +8,28 @@ For my project, I chose to independently study kaboom in order to help me make a
 
 ## Links
 
-[Product]()
+[Product](https://angelal8336.github.io/sep11-freedom-project/mygame/www/index.html)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/1rB_4k91AYzV5LOHKlTsBIXt-eBn3NQzPUS3SnhKBGOg/edit#slide=id.p)
 
 ## Implications
 ##### PROS
-* 
+* Social/game
+    * Helps reduce stress by taking your mind off from schoolwork, or work
+    * Less boredom, and more fun since you are able to complete with your friends to see who can get the highest score
+    * Can improve user's reflex skils which can be transfered to day to day life
+    * easy to understand/simple
+* Global
+    * No paper is wasted since the game is digital; no pollution
+  
 ##### CONS
-* 
-
+* Social
+    * May get addicted to the game; no work done, and no new friends
+* Game
+    * You have to jump before moving or else your likely to touch the monster
+    * You can fall off the map if you go to the sides since there is no constrain to keep you within the screen
+    * Once you score too high, the score will overlap, and the eggs will be too high for you to jump over since you can only double jump
+    * If you keep losing, you might start to rage
 
 ## Blog
 Below you will find my blog about how I made my project.
